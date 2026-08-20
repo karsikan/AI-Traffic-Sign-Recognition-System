@@ -75,8 +75,8 @@ reports/
 logsheets/
 PROJECT_NOTES.md
 
-# Local machine paths and per-user tool settings
-.claude/settings.local.json
+# Local tooling config — useful on this machine, not part of the project
+.claude/
 
 # ── Editors and OS ──────────────────────────────────────────────────────────────
 .vscode/

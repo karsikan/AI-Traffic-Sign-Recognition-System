@@ -1,0 +1,36 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+sqlalchemy>=2.0.30
+pymysql>=1.1.1
+cryptography>=42.0.8
+pydantic>=2.7.4
+pydantic-settings>=2.3.4
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.2.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.1
+ultralytics>=8.2.0
+torch>=2.6.0
+torchvision>=0.20.0
+pillow>=10.3.0
+opencv-python-headless>=4.10.0.84
+numpy>=1.26.4
+requests>=2.32.3
+email-validator>=2.0.0
+
+# Driver fatigue detection — face landmarks for the eye aspect ratio.
+# Install with --no-deps: mediapipe pulls opencv-contrib-python, which would replace the
+# opencv build above. Its remaining requirements are listed underneath.
+#   pip install mediapipe --no-deps
+#   pip install "absl-py~=2.3" "flatbuffers~=25.9" "sounddevice~=0.5" certifi matplotlib
+# The model file is not on PyPI — download it to app/ml/weights/face_landmarker.task from
+# https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task
+mediapipe>=1.0.0
+absl-py~=2.3
+flatbuffers~=25.9
+sounddevice~=0.5
+matplotlib>=3.8
+
+# PDF driver report
+reportlab>=4.0
+

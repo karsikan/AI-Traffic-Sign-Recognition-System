@@ -1,0 +1,16 @@
+# The original mock set: ten images of plain coloured shapes, two held out for
+# validation. Kept so the old training run stays reproducible, but it is not what the
+# shipped detector was trained on — see dataset_synthetic/data.yaml, written by
+# build_synthetic_set.py, for the 1,500 + 300 scene set carrying real sign crops.
+#
+# The path below was absolute to a D: drive that only existed on the machine this was
+# first written on, which made the file unusable anywhere else. It is relative now.
+path: ./dataset
+train: images/train
+val: images/val
+
+names:
+  0: prohibitory
+  1: mandatory
+  2: warning
+  3: information

@@ -1,0 +1,361 @@
+{
+  "measured_at": "2026-08-16 23:39:51",
+  "weights_file": "resnet50_gtsrb.pth",
+  "dataset": "GTSRB official test set",
+  "test_images": 12630,
+  "num_classes": 43,
+  "test_acc": 95.27,
+  "correct": 12033,
+  "macro_precision": 92.5,
+  "macro_recall": 92.89,
+  "macro_f1": 91.89,
+  "weighted_precision": 96.08,
+  "weighted_recall": 95.27,
+  "weighted_f1": 95.38,
+  "class_accuracy": [
+    {
+      "id": 0,
+      "name": "Speed limit 20",
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "f1": 100.0,
+      "samples": 60
+    },
+    {
+      "id": 1,
+      "name": "Speed limit 30",
+      "accuracy": 99.03,
+      "precision": 99.58,
+      "f1": 99.3,
+      "samples": 720
+    },
+    {
+      "id": 2,
+      "name": "Speed limit 50",
+      "accuracy": 98.8,
+      "precision": 97.63,
+      "f1": 98.21,
+      "samples": 750
+    },
+    {
+      "id": 3,
+      "name": "Speed limit 60",
+      "accuracy": 99.33,
+      "precision": 95.72,
+      "f1": 97.49,
+      "samples": 450
+    },
+    {
+      "id": 4,
+      "name": "Speed limit 70",
+      "accuracy": 98.03,
+      "precision": 99.39,
+      "f1": 98.7,
+      "samples": 660
+    },
+    {
+      "id": 5,
+      "name": "Speed limit 80",
+      "accuracy": 98.25,
+      "precision": 94.79,
+      "f1": 96.49,
+      "samples": 630
+    },
+    {
+      "id": 6,
+      "name": "End speed limit 80",
+      "accuracy": 100.0,
+      "precision": 89.82,
+      "f1": 94.64,
+      "samples": 150
+    },
+    {
+      "id": 7,
+      "name": "Speed limit 100",
+      "accuracy": 99.33,
+      "precision": 99.55,
+      "f1": 99.44,
+      "samples": 450
+    },
+    {
+      "id": 8,
+      "name": "Speed limit 120",
+      "accuracy": 92.44,
+      "precision": 99.52,
+      "f1": 95.85,
+      "samples": 450
+    },
+    {
+      "id": 9,
+      "name": "No overtaking",
+      "accuracy": 100.0,
+      "precision": 95.24,
+      "f1": 97.56,
+      "samples": 480
+    },
+    {
+      "id": 10,
+      "name": "No overtaking (trucks)",
+      "accuracy": 100.0,
+      "precision": 97.78,
+      "f1": 98.88,
+      "samples": 660
+    },
+    {
+      "id": 11,
+      "name": "Right of way at intersection",
+      "accuracy": 95.48,
+      "precision": 93.04,
+      "f1": 94.24,
+      "samples": 420
+    },
+    {
+      "id": 12,
+      "name": "Priority road",
+      "accuracy": 94.49,
+      "precision": 99.85,
+      "f1": 97.1,
+      "samples": 690
+    },
+    {
+      "id": 13,
+      "name": "Yield",
+      "accuracy": 99.72,
+      "precision": 95.61,
+      "f1": 97.62,
+      "samples": 720
+    },
+    {
+      "id": 14,
+      "name": "Stop",
+      "accuracy": 89.26,
+      "precision": 100.0,
+      "f1": 94.32,
+      "samples": 270
+    },
+    {
+      "id": 15,
+      "name": "No vehicles",
+      "accuracy": 98.57,
+      "precision": 98.57,
+      "f1": 98.57,
+      "samples": 210
+    },
+    {
+      "id": 16,
+      "name": "No trucks",
+      "accuracy": 94.0,
+      "precision": 100.0,
+      "f1": 96.91,
+      "samples": 150
+    },
+    {
+      "id": 17,
+      "name": "No entry",
+      "accuracy": 94.72,
+      "precision": 97.99,
+      "f1": 96.33,
+      "samples": 360
+    },
+    {
+      "id": 18,
+      "name": "General caution",
+      "accuracy": 90.77,
+      "precision": 99.44,
+      "f1": 94.91,
+      "samples": 390
+    },
+    {
+      "id": 19,
+      "name": "Dangerous curve left",
+      "accuracy": 100.0,
+      "precision": 67.42,
+      "f1": 80.54,
+      "samples": 60
+    },
+    {
+      "id": 20,
+      "name": "Dangerous curve right",
+      "accuracy": 100.0,
+      "precision": 47.87,
+      "f1": 64.75,
+      "samples": 90
+    },
+    {
+      "id": 21,
+      "name": "Double curve",
+      "accuracy": 98.89,
+      "precision": 88.12,
+      "f1": 93.19,
+      "samples": 90
+    },
+    {
+      "id": 22,
+      "name": "Bumpy road",
+      "accuracy": 93.33,
+      "precision": 99.12,
+      "f1": 96.14,
+      "samples": 120
+    },
+    {
+      "id": 23,
+      "name": "Slippery road",
+      "accuracy": 76.67,
+      "precision": 99.14,
+      "f1": 86.47,
+      "samples": 150
+    },
+    {
+      "id": 24,
+      "name": "Road narrows right",
+      "accuracy": 98.89,
+      "precision": 91.75,
+      "f1": 95.19,
+      "samples": 90
+    },
+    {
+      "id": 25,
+      "name": "Road work",
+      "accuracy": 82.29,
+      "precision": 98.01,
+      "f1": 89.47,
+      "samples": 480
+    },
+    {
+      "id": 26,
+      "name": "Traffic signals",
+      "accuracy": 97.78,
+      "precision": 88.44,
+      "f1": 92.88,
+      "samples": 180
+    },
+    {
+      "id": 27,
+      "name": "Pedestrians",
+      "accuracy": 85.0,
+      "precision": 44.74,
+      "f1": 58.62,
+      "samples": 60
+    },
+    {
+      "id": 28,
+      "name": "Children crossing",
+      "accuracy": 82.0,
+      "precision": 100.0,
+      "f1": 90.11,
+      "samples": 150
+    },
+    {
+      "id": 29,
+      "name": "Bicycles crossing",
+      "accuracy": 83.33,
+      "precision": 98.68,
+      "f1": 90.36,
+      "samples": 90
+    },
+    {
+      "id": 30,
+      "name": "Beware ice/snow",
+      "accuracy": 53.33,
+      "precision": 78.43,
+      "f1": 63.49,
+      "samples": 150
+    },
+    {
+      "id": 31,
+      "name": "Wild animals crossing",
+      "accuracy": 97.41,
+      "precision": 96.34,
+      "f1": 96.87,
+      "samples": 270
+    },
+    {
+      "id": 32,
+      "name": "End all limits",
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "f1": 100.0,
+      "samples": 60
+    },
+    {
+      "id": 33,
+      "name": "Turn right ahead",
+      "accuracy": 100.0,
+      "precision": 81.4,
+      "f1": 89.74,
+      "samples": 210
+    },
+    {
+      "id": 34,
+      "name": "Turn left ahead",
+      "accuracy": 100.0,
+      "precision": 89.55,
+      "f1": 94.49,
+      "samples": 120
+    },
+    {
+      "id": 35,
+      "name": "Ahead only",
+      "accuracy": 92.56,
+      "precision": 100.0,
+      "f1": 96.14,
+      "samples": 390
+    },
+    {
+      "id": 36,
+      "name": "Go straight or right",
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "f1": 100.0,
+      "samples": 120
+    },
+    {
+      "id": 37,
+      "name": "Go straight or left",
+      "accuracy": 85.0,
+      "precision": 100.0,
+      "f1": 91.89,
+      "samples": 60
+    },
+    {
+      "id": 38,
+      "name": "Keep right",
+      "accuracy": 98.7,
+      "precision": 99.42,
+      "f1": 99.05,
+      "samples": 690
+    },
+    {
+      "id": 39,
+      "name": "Keep left",
+      "accuracy": 81.11,
+      "precision": 100.0,
+      "f1": 89.57,
+      "samples": 90
+    },
+    {
+      "id": 40,
+      "name": "Roundabout mandatory",
+      "accuracy": 96.67,
+      "precision": 90.62,
+      "f1": 93.55,
+      "samples": 90
+    },
+    {
+      "id": 41,
+      "name": "End no overtaking",
+      "accuracy": 56.67,
+      "precision": 89.47,
+      "f1": 69.39,
+      "samples": 60
+    },
+    {
+      "id": 42,
+      "name": "End no overtaking (trucks)",
+      "accuracy": 92.22,
+      "precision": 75.45,
+      "f1": 83.0,
+      "samples": 90
+    }
+  ]
+}

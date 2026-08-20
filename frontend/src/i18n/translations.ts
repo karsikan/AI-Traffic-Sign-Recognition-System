@@ -1,0 +1,157 @@
+export type Lang = "en" | "ta" | "si";
+
+export const translations = {
+  en: {
+    // Nav
+    home: "Home", aiAssistant: "AI Assistant", signGuide: "Sign Guide",
+    translation: "Translation", touristGuide: "Tourist Guide",
+    nearbyServices: "Nearby Services", emergencyHelp: "Emergency Help",
+    imageDetection: "Image Detection", videoDetection: "Video Detection",
+    webcamDetection: "Webcam Detection", batchDetection: "Batch Detection",
+    predictionHistory: "Prediction History", analytics: "Analytics",
+    aboutSystem: "About System", roadRulesQuiz: "Road Rules Quiz",
+    speedLimits: "Speed Limit Zones", weather: "Live Weather",
+    aiSignDetection: "AI Sign Detection", insightsData: "Insights & Data",
+    // Common UI
+    analyse: "Analyse", upload: "Upload", reset: "Reset",
+    export: "Export CSV", loading: "Loading...", noData: "No data yet",
+    confidence: "Confidence", detected: "Detected", error: "Error",
+    submit: "Submit", cancel: "Cancel", close: "Close",
+    readAloud: "Read Aloud", refresh: "Refresh",
+    // Detection page
+    uploadImage: "Upload a Traffic Sign Image",
+    dragDrop: "Drag & drop or click to browse",
+    analyseBtn: "Analyse Sign",
+    detectionResult: "Detection Result",
+    signDetected: "Sign Detected",
+    meaning: "Meaning",
+    action: "Required Action",
+    engine: "Detection Engine",
+    reportWrong: "Report Wrong",
+    // Home
+    welcomeTitle: "AI Traffic Sign Recognition",
+    welcomeSub: "Smart road safety assistant for Sri Lanka",
+    quickActions: "Quick Actions",
+    // Quiz
+    quizTitle: "Sri Lankan Road Rules Quiz",
+    quizSub: "Test your knowledge of Sri Lanka traffic laws",
+    startQuiz: "Start Quiz",
+    nextQuestion: "Next Question",
+    submitQuiz: "Submit Quiz",
+    yourScore: "Your Score",
+    passed: "Passed! Well done!",
+    failed: "Failed. Please review road rules.",
+    question: "Question",
+    of: "of",
+    // Speed limits
+    speedTitle: "Speed Limit Zones — Sri Lanka",
+    speedSub: "Official speed limits on Sri Lankan roads",
+    roadType: "Road Type", limit: "Speed Limit", zone: "Zone / Area", notes: "Notes",
+    // Weather
+    weatherTitle: "Live Weather — Sri Lanka",
+    weatherSub: "Current conditions across major Sri Lankan cities",
+    temperature: "Temperature", humidity: "Humidity",
+    wind: "Wind Speed", feels: "Feels Like", condition: "Condition",
+    selectCity: "Select City",
+  },
+  ta: {
+    // Nav
+    home: "முகப்பு", aiAssistant: "AI உதவியாளர்", signGuide: "சாலை குறிகள் வழிகாட்டி",
+    translation: "மொழிபெயர்ப்பு", touristGuide: "சுற்றுலா வழிகாட்டி",
+    nearbyServices: "அருகிலுள்ள சேவைகள்", emergencyHelp: "அவசர உதவி",
+    imageDetection: "படம் கண்டறிதல்", videoDetection: "வீடியோ கண்டறிதல்",
+    webcamDetection: "வெப்கேம் கண்டறிதல்", batchDetection: "தொகுப்பு கண்டறிதல்",
+    predictionHistory: "கண்டறிதல் வரலாறு", analytics: "புள்ளியியல்",
+    aboutSystem: "கணினி பற்றி", roadRulesQuiz: "சாலை விதி வினாடி வினா",
+    speedLimits: "வேக வரம்பு மண்டலங்கள்", weather: "நேரடி வானிலை",
+    aiSignDetection: "AI குறி கண்டறிதல்", insightsData: "தகவல் பகுப்பாய்வு",
+    // Common
+    analyse: "பகுப்பாய்வு", upload: "பதிவேற்று", reset: "மீட்டமை",
+    export: "CSV ஏற்றுமதி", loading: "ஏற்றுகிறது...", noData: "தரவு இல்லை",
+    confidence: "நம்பகத்தன்மை", detected: "கண்டறியப்பட்டது", error: "பிழை",
+    submit: "சமர்ப்பி", cancel: "ரத்து செய்", close: "மூடு",
+    readAloud: "சத்தமாக படி", refresh: "புதுப்பி",
+    // Detection
+    uploadImage: "போக்குவரத்து அடையாள படம் பதிவேற்றவும்",
+    dragDrop: "இழுத்து விடவும் அல்லது கிளிக் செய்யவும்",
+    analyseBtn: "குறியை பகுப்பாய்வு செய்",
+    detectionResult: "கண்டறிதல் முடிவு",
+    signDetected: "அடையாளம் கண்டறியப்பட்டது",
+    meaning: "பொருள்",
+    action: "தேவையான நடவடிக்கை",
+    engine: "கண்டறிதல் இயந்திரம்",
+    reportWrong: "தவறு புகார்",
+    // Home
+    welcomeTitle: "AI போக்குவரத்து குறி அங்கீகாரம்",
+    welcomeSub: "இலங்கைக்கான சாலை பாதுகாப்பு உதவியாளர்",
+    quickActions: "விரைவு செயல்கள்",
+    // Quiz
+    quizTitle: "இலங்கை சாலை விதி வினாடி வினா",
+    quizSub: "இலங்கை போக்குவரத்து சட்டங்களை சோதியுங்கள்",
+    startQuiz: "வினாடி வினா தொடங்கு", nextQuestion: "அடுத்த கேள்வி",
+    submitQuiz: "சமர்ப்பி", yourScore: "உங்கள் மதிப்பெண்",
+    passed: "தேர்ச்சி! சாபாஷ்!", failed: "தோல்வி. சாலை விதிகளை மீண்டும் படிக்கவும்.",
+    question: "கேள்வி", of: "இல்",
+    // Speed
+    speedTitle: "வேக வரம்பு மண்டலங்கள் — இலங்கை",
+    speedSub: "இலங்கை சாலைகளில் அதிகாரப்பூர்வ வேக வரம்புகள்",
+    roadType: "சாலை வகை", limit: "வேக வரம்பு", zone: "மண்டலம்", notes: "குறிப்புகள்",
+    // Weather
+    weatherTitle: "நேரடி வானிலை — இலங்கை",
+    weatherSub: "இலங்கை நகரங்களில் தற்போதைய நிலைமைகள்",
+    temperature: "வெப்பநிலை", humidity: "ஈரப்பதம்",
+    wind: "காற்று வேகம்", feels: "உணர்வு", condition: "நிலை",
+    selectCity: "நகரை தேர்வு செய்யவும்",
+  },
+  si: {
+    // Nav
+    home: "මුල් පිටුව", aiAssistant: "AI සහායක", signGuide: "සංඥා මාර්ගෝපදේශය",
+    translation: "පරිවර්තනය", touristGuide: "සංචාරක මාර්ගෝපදේශය",
+    nearbyServices: "ආසන්න සේවා", emergencyHelp: "හදිසි උදව්",
+    imageDetection: "රූප හඳුනාගැනීම", videoDetection: "වීඩියෝ හඳුනාගැනීම",
+    webcamDetection: "වෙබ්කෑම් හඳුනාගැනීම", batchDetection: "කණ්ඩායම් හඳුනාගැනීම",
+    predictionHistory: "හඳුනාගැනීමේ ඉතිහාසය", analytics: "විශ්ලේෂණ",
+    aboutSystem: "පද්ධතිය ගැන", roadRulesQuiz: "මාර්ග නීති ප්‍රශ්නාවලිය",
+    speedLimits: "වේග සීමා කලාප", weather: "සජීවී කාලගුණය",
+    aiSignDetection: "AI සංඥා හඳුනාගැනීම", insightsData: "දත්ත විශ්ලේෂණ",
+    // Common
+    analyse: "විශ්ලේෂණය", upload: "උඩුගත කරන්න", reset: "යළි සකසන්න",
+    export: "CSV අපනයනය", loading: "පූරණය වෙමින්...", noData: "දත්ත නොමැත",
+    confidence: "විශ්වාසනීයත්වය", detected: "හඳුනාගන්නා ලදී", error: "දෝෂය",
+    submit: "ඉදිරිපත් කරන්න", cancel: "අවලංගු කරන්න", close: "වසන්න",
+    readAloud: "声に出して読む", refresh: "යළි පූරණය",
+    // Detection
+    uploadImage: "රථවාහන සංඥා රූපයක් උඩුගත කරන්න",
+    dragDrop: "ඇදගෙන හෙළන්න හෝ ක්ලික් කරන්න",
+    analyseBtn: "සංඥාව විශ්ලේෂණය කරන්න",
+    detectionResult: "හඳුනාගැනීමේ ප්‍රතිඵලය",
+    signDetected: "සංඥාව හඳුනාගන්නා ලදී",
+    meaning: "අර්ථය",
+    action: "අවශ්‍ය ක්‍රියාව",
+    engine: "හඳුනාගැනීමේ එන්ජිම",
+    reportWrong: "වැරදි වාර්තා කරන්න",
+    // Home
+    welcomeTitle: "AI රථවාහන සංඥා හඳුනාගැනීම",
+    welcomeSub: "ශ්‍රී ලංකාව සඳහා මාර්ග ආරක්ෂා සහායක",
+    quickActions: "ඉක්මන් ක්‍රියා",
+    // Quiz
+    quizTitle: "ශ්‍රී ලංකා මාර්ග නීති ප්‍රශ්නාවලිය",
+    quizSub: "ශ්‍රී ලංකා රථවාහන නීති පරීක්ෂා කරන්න",
+    startQuiz: "ප්‍රශ්නාවලිය ආරම්භ කරන්න", nextQuestion: "ඊළඟ ප්‍රශ්නය",
+    submitQuiz: "ඉදිරිපත් කරන්න", yourScore: "ඔබේ ලකුණු",
+    passed: "සමත්! ශාභාෂ්!", failed: "අසමත්. මාර්ග නීති නැවත කියවන්න.",
+    question: "ප්‍රශ්නය", of: "න්",
+    // Speed
+    speedTitle: "වේග සීමා කලාප — ශ්‍රී ලංකාව",
+    speedSub: "ශ්‍රී ලංකා මාර්ගවල නිල වේග සීමා",
+    roadType: "මාර්ග වර්ගය", limit: "වේග සීමාව", zone: "කලාපය", notes: "සටහන්",
+    // Weather
+    weatherTitle: "සජීවී කාලගුණය — ශ්‍රී ලංකාව",
+    weatherSub: "ශ්‍රී ලංකා නගරවල වත්මන් තත්ත්වයන්",
+    temperature: "උෂ්ණත්වය", humidity: "තෙතමනය",
+    wind: "සුළං වේගය", feels: "දැනෙන ආකාරය", condition: "තත්ත්වය",
+    selectCity: "නගරය තෝරන්න",
+  },
+} as const;
+
+export type TranslationKey = keyof typeof translations.en;

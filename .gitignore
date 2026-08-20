@@ -1,0 +1,86 @@
+# ── Model weights ───────────────────────────────────────────────────────────────
+# These are hundreds of megabytes and are what makes `git push` time out.
+# Re-download or retrain them instead — see README.md.
+*.pt
+*.pth
+*.task
+*.onnx
+*.bak
+backend/app/ml/weights/*
+!backend/app/ml/weights/.gitkeep
+
+# ── Dataset ─────────────────────────────────────────────────────────────────────
+# GTSRB is public — download it rather than committing 51,839 images.
+archive/
+ai/**/model/
+ai/**/runs/
+*.ppm
+
+# Generated detection set and its training run: 145 MB that build_synthetic_set.py and
+# train_synthetic.py rebuild from the GTSRB crops, so the scripts belong in the repo
+# and their output does not. The measured result is kept — see the metrics note below.
+ai/yolov8_module/dataset_synthetic/
+ai/yolov8_module/runs_synthetic/
+ai/yolov8_module/*.log
+
+# ── Measured model metrics — deliberately NOT ignored ───────────────────────────
+# backend/app/ml/metrics/*.json is what the model page reads instead of hard-coded
+# accuracy figures. A few kilobytes, and without them a fresh clone shows the models
+# as unmeasured, so these are committed on purpose.
+
+# ── Python ──────────────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node ────────────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# ── Secrets ─────────────────────────────────────────────────────────────────────
+# GEMINI_API_KEY lives here. Never commit it.
+.env
+.env.*
+!.env.example
+
+# ── Runtime data ────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+backend/uploads/
+backend/logs/
+training_log.txt
+
+# ── Generated output ────────────────────────────────────────────────────────────
+confusion_matrix.png
+*.pdf
+!logsheets/*.pdf
+!reports/*.pdf
+
+# ── Coursework and personal material ────────────────────────────────────────────
+# This repository is public, so the academic submission itself stays out of it.
+# A thesis published before it is marked can be indexed by plagiarism checkers and
+# then match against the author's own submission. The logsheets and the handoff
+# notes carry a student number, a supervisor's name and a manager's name — other
+# people's details are not ours to publish. All of it stays on the local machine;
+# none of it is needed to run or review the code.
+reports/
+logsheets/
+PROJECT_NOTES.md
+
+# Local machine paths and per-user tool settings
+.claude/settings.local.json
+
+# ── Editors and OS ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

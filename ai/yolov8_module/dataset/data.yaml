@@ -1,0 +1,9 @@
+path: C:\Users\jdino\Downloads\final project (1)\final project\ai\yolov8_module\dataset
+train: images/train
+val: images/val
+
+names:
+  0: prohibitory
+  1: mandatory
+  2: warning
+  3: information
